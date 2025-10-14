@@ -1,0 +1,16 @@
+{
+  "name": "@sample/service-sample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "mocha \"./**/*.test.mjs\" --exclude \"./**/node_modules/**\""
+  },
+  "dependencies": {
+    "@sample/core": "file:../core",
+    "@sample/http": "file:../http",
+    "@sample/service": "file:../service"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.4"
+  }
+}

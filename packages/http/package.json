@@ -1,0 +1,15 @@
+{
+	"name": "@sample/http",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"test": "mocha \"**/*.test.mjs\""
+	},
+	"dependencies": {
+		"@sample/core": "file:../core",
+		"http-errors": "^2.0.0"
+	},
+	"devDependencies": {
+		"mocha": "^11.7.4"
+	}
+}

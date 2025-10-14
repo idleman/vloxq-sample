@@ -1,0 +1,10 @@
+{
+  "name": "sample",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "test": "mocha \"./packages/**/*.test.mjs\" --exclude \"./**/node_modules/**\" --experimental-import-meta-resolve -disable-warning=ExperimentalWarning"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.1"
+  }
+}
