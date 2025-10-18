@@ -63,6 +63,13 @@ describe(getPackageName(import.meta.url), function() {
         const { result } = await response.json();
         strictEqual(result, multiply(2, sum(3, 6)));
       }
+
+      {
+        const response = await fetch(`${baseUrl}/evaluate?expression=multiply(4,sum(3,6))`);
+        strictEqual(response.status, 200);
+        const { result } = await response.json();
+        strictEqual(result, multiply(4, sum(3, 6)));
+      }
     }));
 
   })
